@@ -1,6 +1,7 @@
 using System.Linq;
 using System.Collections.Generic;
 using System.Collections;
+using System;
 
 namespace Biblioteca.Models
 {
@@ -45,6 +46,7 @@ namespace Biblioteca.Models
 
                         case "Titulo":
                             query = bc.Livros.Where(l => l.Titulo.Contains(filtro.Filtro));
+
                         break;
 
                         default:
@@ -55,8 +57,9 @@ namespace Biblioteca.Models
                 else
                 {
                     // caso filtro não tenha sido informado
-                    query = bc.Livros;
-                    
+                    Console.WriteLine("Teste");
+                    query = bc.Livros;              
+
                 }
                 
                 //ordenação padrão
