@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
@@ -30,14 +31,19 @@ namespace Biblioteca.Models
             }
         }
 
-        public ICollection<Emprestimo> ListarTodos(FiltrosEmprestimos filtro)
+        public ICollection<Emprestimo> ListarTodos(FiltrosEmprestimos filtro = null)
         {
+            
             using(BibliotecaContext bc = new BibliotecaContext())
             {
-                return bc.Emprestimos.Include(e => e.Livro).ToList();
+                
+                IQueryable<Emprestimo> query;
+                query = bc.Emprestimos;
+                bc.Emprestimos.Include(e => e.Livro).ToList();
+                return query.OrderBy(e => e.DataDevolucao).ToList();
+                //return bc.Emprestimos.Include(e => e.Livro).ToList();
             }
         }
-
         public Emprestimo ObterPorId(int id)
         {
             using(BibliotecaContext bc = new BibliotecaContext())

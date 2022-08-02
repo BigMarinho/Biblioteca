@@ -57,7 +57,6 @@ namespace Biblioteca.Models
                 else
                 {
                     // caso filtro não tenha sido informado
-                    Console.WriteLine("Teste");
                     query = bc.Livros;              
 
                 }
