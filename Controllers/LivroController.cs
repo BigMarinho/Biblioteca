@@ -31,6 +31,7 @@ namespace Biblioteca.Controllers
         public IActionResult Listagem(string tipoFiltro, string filtro)
         {
             Autenticacao.CheckLogin(this);
+            System.Console.WriteLine("Tipo Filtro " + tipoFiltro);
             FiltrosLivros objFiltro = null;
             if(!string.IsNullOrEmpty(filtro))
             {

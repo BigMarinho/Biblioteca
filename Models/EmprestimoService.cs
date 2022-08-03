@@ -38,10 +38,35 @@ namespace Biblioteca.Models
             {
                 
                 IQueryable<Emprestimo> query;
-                query = bc.Emprestimos;
+
+                if(filtro != null)
+                {
+                    //definindo dinamicamente a filtragem
+                    switch(filtro.TipoFiltro)
+                    {
+                        case "Usuario":
+                            query = bc.Emprestimos.Where(l => l.NomeUsuario.Contains(filtro.Filtro));
+                            Console.WriteLine("xxxxxxxPassou aqui");
+                        break;
+
+                        case "Livro":
+                            query = bc.Emprestimos.Where(l => l.Livro.Titulo.Contains(filtro.Filtro));
+
+                        break;
+
+                        default:
+                            query = bc.Emprestimos;
+                        break;
+                    }
+                }
+                else 
+                {
+                    query = bc.Emprestimos;
+                }
+
+                
                 bc.Emprestimos.Include(e => e.Livro).ToList();
                 return query.OrderBy(e => e.DataDevolucao).ToList();
-                //return bc.Emprestimos.Include(e => e.Livro).ToList();
             }
         }
         public Emprestimo ObterPorId(int id)
