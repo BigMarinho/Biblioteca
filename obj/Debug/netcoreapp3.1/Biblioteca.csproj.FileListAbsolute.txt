@@ -50,3 +50,6 @@ C:\Users\Gabriel\Desktop\Biblioteca\obj\Debug\netcoreapp3.1\Biblioteca.csproj.Co
 C:\Users\Gabriel\Desktop\Biblioteca\obj\Debug\netcoreapp3.1\Biblioteca.dll
 C:\Users\Gabriel\Desktop\Biblioteca\obj\Debug\netcoreapp3.1\Biblioteca.pdb
 C:\Users\Gabriel\Desktop\Biblioteca\obj\Debug\netcoreapp3.1\Biblioteca.genruntimeconfig.cache
+C:\Users\Gabriel\Desktop\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuarios\Cadastro.cshtml.g.cs
+C:\Users\Gabriel\Desktop\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuarios\Listar.cshtml.g.cs
+C:\Users\Gabriel\Desktop\Biblioteca\obj\Debug\netcoreapp3.1\Razor\Views\Usuarios\Editar.cshtml.g.cs

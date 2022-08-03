@@ -14417,6 +14417,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Gabriel\\Desktop\\Biblioteca\\Views\\Usuarios\\Editar.cshtml",
+      "TargetPath": "Views\\Usuarios\\Editar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Gabriel\\Desktop\\Biblioteca\\Views\\Livro\\Edicao.cshtml",
       "TargetPath": "Views\\Livro\\Edicao.cshtml",
       "FileKind": "mvc"
@@ -14472,8 +14477,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Gabriel\\Desktop\\Biblioteca\\Views\\Usuarios\\Cadastro.cshtml",
+      "TargetPath": "Views\\Usuarios\\Cadastro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Gabriel\\Desktop\\Biblioteca\\Views\\Livro\\Cadastro.cshtml",
       "TargetPath": "Views\\Livro\\Cadastro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Gabriel\\Desktop\\Biblioteca\\Views\\Usuarios\\Listar.cshtml",
+      "TargetPath": "Views\\Usuarios\\Listar.cshtml",
       "FileKind": "mvc"
     }
   ],

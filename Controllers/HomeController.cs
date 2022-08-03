@@ -40,6 +40,7 @@ namespace Biblioteca.Controllers
                 
                 HttpContext.Session.SetInt32("id", usuario.id);
                 HttpContext.Session.SetString("login", usuario.login);
+                HttpContext.Session.SetString("privilegio", usuario.privilegio);
 
                 int idUsuario = (int)HttpContext.Session.GetInt32("id");
                 return Redirect("Index");
